@@ -4,6 +4,7 @@ import (
 	"bufio"
 	"fmt"
 	"os"
+	"strconv"
 )
 
 const (
@@ -16,7 +17,8 @@ func main() {
 	var ans, cur int
 	for scanner.Scan() {
 		// fmt.Println(scanner.Text()) // Println will add back the final '\n'
-		cur = process(scanner.Text())
+		// cur = process(scanner.Text())
+		cur = processv2(scanner.Text())
 		ans = max(ans, cur)
 	}
 	if err := scanner.Err(); err != nil {
@@ -59,6 +61,24 @@ func process(s string) int {
 	}
 	// fmt.Printf("row: %d, seat: %d\n", l, sl)
 	return l*8 + sl
+}
+
+func processv2(s string) int {
+	// F->0, B->1, L->0, R->1
+	sb := []byte(s)
+	for i := range sb {
+		if s[i] == 'F' {
+			sb[i] = '0'
+		} else if s[i] == 'B' {
+			sb[i] = '1'
+		} else if s[i] == 'L' {
+			sb[i] = '0'
+		} else {
+			sb[i] = '1'
+		}
+	}
+	num, _ := strconv.ParseInt(string(sb), 2, 64)
+	return int(num)
 }
 
 func max(a, b int) int {
