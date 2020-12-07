@@ -27,6 +27,7 @@ func main() {
 		// light red bags contain 1 bright white bag, 2 muted yellow bags.
 		txt := scanner.Text()
 		idx1 := strings.Index(txt, sp1)
+		// idx1-1 here just trim the ' ' in the end.
 		pb := txt[:idx1-1]
 		// if adj[pb] == nil {
 		// 	adj[pb] = make(map[string]int)
