@@ -11,33 +11,16 @@ import (
 func main() {
 	var preamble, wanted int
 	flag.IntVar(&preamble, "preamble", 25, "the length of preamble")
+	// hard coded the invalid num got from part1
+	// for the testcase it should be 127.
 	flag.IntVar(&wanted, "wanted", 31161678, "target sum")
 	flag.Parse()
 	scanner := bufio.NewScanner(os.Stdin)
-	// store := make([]int, preamble)
 	var store []int
-	// for i := range store {
-	// 	store[i] = math.MinInt32
-	// }
-	// set := make(map[int]bool, preamble)
 	for scanner.Scan() {
 		txt := scanner.Text()
 		num, _ := strconv.Atoi(txt)
 		store = append(store, num)
-
-		// pos := idx % preamble
-		// // store[idx] = num
-		// if idx > preamble && !isValid(store, set, num) {
-		// 	fmt.Println(num)
-		// 	return
-		// }
-		// prev := store[pos]
-		// if prev != math.MinInt32 {
-		// 	delete(set, prev)
-		// }
-		// set[num] = true
-		// store[pos] = num
-		// idx++
 	}
 	if err := scanner.Err(); err != nil {
 		fmt.Fprintln(os.Stderr, "reading standard input:", err)
