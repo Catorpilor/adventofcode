@@ -1,0 +1,44 @@
+2 rounds, wanted: #, target: Z, dst: L
+#.LL.L#.##
+#LLLLLL.L#
+L.L.L..L..
+#LLL.LL.L#
+#.LL.LL.LL
+#.LLLL#.##
+..L.L.....
+#LLLLLLLL#
+#.LLLLLL.L
+#.#LLLL.##
+3 rounds, wanted: L, target: X, dst: #
+#.##.L#.##
+#L###LL.L#
+L.#.#..#..
+#L##.##.L#
+#.##.LL.LL
+#.###L#.##
+..#.#.....
+#L######L#
+#.LL###L.L
+#.#L###.##
+4 rounds, wanted: #, target: Z, dst: L
+#.#L.LX.##
+#LLL#LL.L#
+L.L.L..#..
+#LLL.##.LX
+#.LL.LL.LL
+#.LL#LX.##
+..L.L.....
+#L#LLLL#LX
+#.LLLLLL.L
+#.XL#L#.##
+5 rounds, wanted: L, target: X, dst: #
+#.#L.L#.##
+#LLL#LL.Z#
+L.#.L..#..
+#L##.##.L#
+#.#L.LL.LL
+#.#L#L#.##
+..L.L.....
+#L#L##L#L#
+#.LLLLLL.L
+#.#L#L#.##
