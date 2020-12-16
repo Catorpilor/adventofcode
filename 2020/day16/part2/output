@@ -1,0 +1,44 @@
+your ticket: 53,67,73,109,113,107,137,131,71,59,101,179,181,61,97,173,103,89,127,139
+col: 0 has multiple (11) fields: [departure track route wagon zone departure time arrival track departure station arrival location arrival platform price type]
+col: 1 has multiple (20) fields: [departure track row route wagon zone departure location arrival station class duration train departure date departure time arrival track seat price type departure station departure platform arrival location arrival platform]
+col: 2 has multiple (2) fields: [arrival platform price]
+col: 3 has multiple (17) fields: [departure station departure platform arrival location arrival platform price type departure track departure location class route wagon zone departure date departure time arrival track seat train]
+col: 4 has multiple (16) fields: [route wagon zone departure location class seat departure date departure time arrival track arrival platform price type departure station departure platform arrival location departure track]
+col: 5 has multiple (13) fields: [departure station departure platform arrival location arrival platform price type departure track route wagon zone departure date departure time arrival track]
+col: 6 has multiple (8) fields: [arrival track arrival platform price type arrival location route wagon zone]
+col: 7 has multiple (5) fields: [arrival track arrival platform price wagon route]
+col: 8 has multiple (15) fields: [departure location class route wagon zone departure date departure time arrival track departure station departure platform arrival location arrival platform price type departure track]
+col: 9 has multiple (19) fields: [departure station departure platform arrival location arrival platform price type departure track zone departure location arrival station class duration route wagon departure date departure time arrival track seat train]
+col: 10 has multiple (9) fields: [route wagon zone departure time arrival track arrival location arrival platform price type]
+col: 11 is fixed with field:price
+col: 12 has multiple (18) fields: [departure track duration route wagon zone departure location class seat train departure date departure time arrival track arrival platform price type departure station departure platform arrival location]
+col: 13 has multiple (4) fields: [arrival platform price wagon arrival track]
+col: 14 has multiple (12) fields: [departure track route wagon zone departure time arrival track departure date arrival location arrival platform price type departure station]
+col: 15 has multiple (14) fields: [departure time arrival track departure date departure platform arrival location arrival platform price type departure station departure track route wagon zone departure location]
+col: 16 has multiple (6) fields: [arrival location arrival platform price route wagon arrival track]
+col: 17 has multiple (10) fields: [departure time arrival track departure station arrival location arrival platform price type route wagon zone]
+col: 18 has multiple (3) fields: [arrival track arrival platform price]
+col: 19 has multiple (7) fields: [wagon route arrival track type arrival location arrival platform price]
+
+
+11 -> price
+2 --> arrival platform
+18 --> arrival track
+13 --> wagon
+7 --> route
+16 --> arrival location
+19 --> type
+6 --> zone
+10 --> departure time
+17 --> departure station
+0 --> departure time
+14 --> departure date
+5 --> departure platform
+15 --> departure track
+
+
+
+
+
+
+
