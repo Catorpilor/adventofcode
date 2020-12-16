@@ -4,6 +4,7 @@ import (
 	"bufio"
 	"fmt"
 	"os"
+	"sort"
 	"strconv"
 	"strings"
 )
@@ -114,11 +115,35 @@ func main() {
 		}
 		// delete(regs, fields[i])
 	}
+	idxs := make([]int, len(reverted))
+	for i := range idxs {
+		idxs[i] = i
+	}
+	sort.Slice(idxs, func(i, j int) bool {
+		return len(fields[idxs[i]]) < len(fields[idxs[j]])
+	})
+	used := make(map[string]bool, len(reverted))
+	fixed := make([]string, len(reverted))
+	aidxs := make([]int, 0, len(reverted))
+	for i := 0; i < len(reverted); i++ {
+		ffs := fields[idxs[i]]
+		for _, s := range ffs {
+			if used[s] {
+				continue
+			}
+			used[s] = true
+			fixed[i] = s
+			if strings.Contains(s, "departure") {
+				aidxs = append(aidxs, idxs[i])
+			}
+		}
+	}
+	// fmt.Println(aidxs)
 	// fileds can be sorted based on the length of protential field.
-	coded := []int{10, 17, 0, 14, 5, 15}
+	// coded := []int{10, 17, 0, 14, 5, 15}
 	ans := 1
-	for i := range coded {
-		ans *= yourTicket[coded[i]]
+	for i := range aidxs {
+		ans *= yourTicket[aidxs[i]]
 	}
 	fmt.Println(ans)
 	// cols := make([]int, len(reverted))
