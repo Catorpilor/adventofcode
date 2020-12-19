@@ -130,18 +130,13 @@ func helper(str string) int64 {
 	// 	fmt.Printf("for str: %s, remaings st: %v, and ops:%v\n", str, st, ops)
 	// }
 	for nst > 0 {
-		preOp := ops[nst-1]
+		// multiplication part
 		preVal := st[nst-1]
 		ops = ops[:nst-1]
 		st = st[:nst-1]
 		nst--
-		switch preOp {
-		case '+':
-			ans += preVal
-		case '*':
-			ans *= preVal
-		}
+		ans *= preVal
 	}
-	fmt.Printf("expr: %s ===> %d\n", str, ans)
+	// fmt.Printf("expr: %s ===> %d\n", str, ans)
 	return ans
 }
