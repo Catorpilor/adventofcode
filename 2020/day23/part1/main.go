@@ -17,18 +17,13 @@ func main() {
 	flag.Parse()
 	scanner := bufio.NewScanner(os.Stdin)
 	dummy := &list{}
-	prev := dummy.next
+	prev := dummy
 	for scanner.Scan() {
 		txt := scanner.Text()
 		for i := range txt {
 			num, _ := strconv.Atoi(txt[i : i+1])
-			if prev == nil {
-				dummy.next = &list{val: num}
-				prev = dummy.next
-			} else {
-				prev.next = &list{val: num}
-				prev = prev.next
-			}
+			prev.next = &list{val: num}
+			prev = prev.next
 		}
 	}
 	prev.next = dummy.next
