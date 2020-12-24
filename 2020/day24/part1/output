@@ -1,0 +1,795 @@
+processing txt:sesenwnenenewseeswwswswwnenewsewsw
+direction: se
+, cur: 0,0
+direction: se
+, cur: 1,-1
+direction: nw
+, cur: 2,-2
+direction: ne
+, cur: 1,-1
+direction: ne
+, cur: 2,0
+direction: ne
+, cur: 3,1
+direction: w
+, cur: 4,2
+direction: se
+, cur: 3,2
+direction: e
+, cur: 4,1
+direction: sw
+, cur: 5,1
+direction: w
+, cur: 4,0
+direction: sw
+, cur: 3,0
+direction: sw
+, cur: 2,-1
+direction: w
+, cur: 1,-2
+direction: ne
+, cur: 0,-2
+direction: ne
+, cur: 1,-1
+direction: w
+, cur: 2,0
+direction: se
+, cur: 1,0
+direction: w
+, cur: 2,-1
+direction: sw
+, cur: 1,-1
+=====
+ store: map[0,-2:0,-2 0,0:0,0 1,-1:1,-1 1,-2:1,-2 1,0:1,0 2,-1:2,-1 2,-2:2,-2 2,0:2,0 3,0:3,0 3,1:3,1 3,2:3,2 4,0:4,0 4,1:4,1 4,2:4,2 5,1:5,1]
+processing txt:neeenesenwnwwswnenewnwwsewnenwseswesw
+direction: ne
+, cur: 0,0
+direction: e
+, cur: 1,1
+direction: e
+, cur: 2,1
+direction: ne
+, cur: 3,1
+direction: se
+, cur: 4,2
+direction: nw
+, cur: 5,1
+direction: nw
+, cur: 4,2
+direction: w
+, cur: 3,3
+direction: sw
+, cur: 2,3
+direction: ne
+, cur: 1,2
+direction: ne
+, cur: 2,3
+direction: w
+, cur: 3,4
+direction: nw
+, cur: 2,4
+direction: w
+, cur: 1,5
+direction: se
+, cur: 0,5
+direction: w
+, cur: 1,4
+direction: ne
+, cur: 0,4
+direction: nw
+, cur: 1,5
+direction: se
+, cur: 0,6
+direction: sw
+, cur: 1,5
+direction: e
+, cur: 0,4
+direction: sw
+, cur: 1,4
+=====
+ store: map[0,-2:0,-2 0,0:0,0 0,3:0,3 0,4:0,4 0,5:0,5 0,6:0,6 1,-1:1,-1 1,-2:1,-2 1,0:1,0 1,1:1,1 1,2:1,2 1,4:1,4 1,5:1,5 2,-1:2,-1 2,-2:2,-2 2,0:2,0 2,1:2,1 2,3:2,3 2,4:2,4 3,0:3,0 3,1:3,1 3,2:3,2 3,3:3,3 3,4:3,4 4,0:4,0 4,1:4,1 4,2:4,2 5,1:5,1]
+processing txt:seswneswswsenwwnwse
+direction: se
+, cur: 0,0
+direction: sw
+, cur: 1,-1
+direction: ne
+, cur: 0,-2
+direction: sw
+, cur: 1,-1
+direction: sw
+, cur: 0,-2
+direction: se
+, cur: -1,-3
+direction: nw
+, cur: 0,-4
+direction: w
+, cur: -1,-3
+direction: nw
+, cur: -2,-3
+direction: se
+, cur: -3,-2
+=====
+ store: map[-1,-3:-1,-3 -2,-3:-2,-3 -3,-2:-3,-2 0,-2:0,-2 0,-4:0,-4 0,0:0,0 0,3:0,3 0,4:0,4 0,5:0,5 0,6:0,6 1,-1:1,-1 1,-2:1,-2 1,0:1,0 1,1:1,1 1,2:1,2 1,4:1,4 1,5:1,5 2,-1:2,-1 2,-2:2,-2 2,0:2,0 2,1:2,1 2,3:2,3 2,4:2,4 3,0:3,0 3,1:3,1 3,2:3,2 3,3:3,3 3,4:3,4 4,0:4,0 4,1:4,1 4,2:4,2 5,1:5,1]
+processing txt:nwnwneseeswswnenewneswwnewseswneseene
+direction: nw
+, cur: 0,0
+direction: nw
+, cur: -1,1
+direction: ne
+, cur: -2,2
+direction: se
+, cur: -1,3
+direction: e
+, cur: 0,2
+direction: sw
+, cur: 1,2
+direction: sw
+, cur: 0,1
+direction: ne
+, cur: -1,0
+direction: ne
+, cur: 0,1
+direction: w
+, cur: 1,2
+direction: ne
+, cur: 0,2
+direction: sw
+, cur: 1,3
+direction: w
+, cur: 0,2
+direction: ne
+, cur: -1,2
+direction: w
+, cur: 0,3
+direction: se
+, cur: -1,3
+direction: sw
+, cur: 0,2
+direction: ne
+, cur: -1,1
+direction: se
+, cur: 0,2
+direction: e
+, cur: 1,1
+direction: ne
+, cur: 2,1
+=====
+ store: map[-1,-3:-1,-3 -1,0:-1,0 -1,1:-1,1 -1,2:-1,2 -1,3:-1,3 -2,-3:-2,-3 -2,2:-2,2 -3,-2:-3,-2 0,-2:0,-2 0,-4:0,-4 0,0:0,0 0,1:0,1 0,2:0,2 0,3:0,3 0,4:0,4 0,5:0,5 0,6:0,6 1,-1:1,-1 1,-2:1,-2 1,0:1,0 1,1:1,1 1,2:1,2 1,3:1,3 1,4:1,4 1,5:1,5 2,-1:2,-1 2,-2:2,-2 2,0:2,0 2,1:2,1 2,3:2,3 2,4:2,4 3,0:3,0 3,1:3,1 3,2:3,2 3,3:3,3 3,4:3,4 4,0:4,0 4,1:4,1 4,2:4,2 5,1:5,1]
+processing txt:swweswneswnenwsewnwneneseenw
+direction: sw
+, cur: 0,0
+direction: w
+, cur: -1,-1
+direction: e
+, cur: -2,-1
+direction: sw
+, cur: -1,-1
+direction: ne
+, cur: -2,-2
+direction: sw
+, cur: -1,-1
+direction: ne
+, cur: -2,-2
+direction: nw
+, cur: -1,-1
+direction: se
+, cur: -2,0
+direction: w
+, cur: -1,-1
+direction: nw
+, cur: -2,-1
+direction: ne
+, cur: -3,0
+direction: ne
+, cur: -2,1
+direction: se
+, cur: -1,2
+direction: e
+, cur: 0,1
+direction: nw
+, cur: 1,1
+=====
+ store: map[-1,-1:-1,-1 -1,-3:-1,-3 -1,0:-1,0 -1,1:-1,1 -1,2:-1,2 -1,3:-1,3 -2,-1:-2,-1 -2,-2:-2,-2 -2,-3:-2,-3 -2,0:-2,0 -2,1:-2,1 -2,2:-2,2 -3,-2:-3,-2 -3,0:-3,0 0,-2:0,-2 0,-4:0,-4 0,0:0,0 0,1:0,1 0,2:0,2 0,3:0,3 0,4:0,4 0,5:0,5 0,6:0,6 1,-1:1,-1 1,-2:1,-2 1,0:1,0 1,1:1,1 1,2:1,2 1,3:1,3 1,4:1,4 1,5:1,5 2,-1:2,-1 2,-2:2,-2 2,0:2,0 2,1:2,1 2,3:2,3 2,4:2,4 3,0:3,0 3,1:3,1 3,2:3,2 3,3:3,3 3,4:3,4 4,0:4,0 4,1:4,1 4,2:4,2 5,1:5,1]
+processing txt:eesenwseswswnenwswnwnwsewwnwsene
+direction: e
+, cur: 0,0
+direction: e
+, cur: 1,0
+direction: se
+, cur: 2,0
+direction: nw
+, cur: 3,-1
+direction: se
+, cur: 2,0
+direction: sw
+, cur: 3,-1
+direction: sw
+, cur: 2,-2
+direction: ne
+, cur: 1,-3
+direction: nw
+, cur: 2,-2
+direction: sw
+, cur: 1,-1
+direction: nw
+, cur: 0,-2
+direction: nw
+, cur: -1,-1
+direction: se
+, cur: -2,0
+direction: w
+, cur: -1,-1
+direction: w
+, cur: -2,-1
+direction: nw
+, cur: -3,-1
+direction: se
+, cur: -4,0
+direction: ne
+, cur: -3,-1
+=====
+ store: map[-1,-1:-1,-1 -1,-3:-1,-3 -1,0:-1,0 -1,1:-1,1 -1,2:-1,2 -1,3:-1,3 -2,-1:-2,-1 -2,-2:-2,-2 -2,-3:-2,-3 -2,0:-2,0 -2,1:-2,1 -2,2:-2,2 -3,-1:-3,-1 -3,-2:-3,-2 -3,0:-3,0 -4,0:-4,0 0,-2:0,-2 0,-4:0,-4 0,0:0,0 0,1:0,1 0,2:0,2 0,3:0,3 0,4:0,4 0,5:0,5 0,6:0,6 1,-1:1,-1 1,-2:1,-2 1,-3:1,-3 1,0:1,0 1,1:1,1 1,2:1,2 1,3:1,3 1,4:1,4 1,5:1,5 2,-1:2,-1 2,-2:2,-2 2,0:2,0 2,1:2,1 2,3:2,3 2,4:2,4 3,-1:3,-1 3,0:3,0 3,1:3,1 3,2:3,2 3,3:3,3 3,4:3,4 4,0:4,0 4,1:4,1 4,2:4,2 5,1:5,1]
+processing txt:sewnenenenesenwsewnenwwwse
+direction: se
+, cur: 0,0
+direction: w
+, cur: 1,-1
+direction: ne
+, cur: 0,-1
+direction: ne
+, cur: 1,0
+direction: ne
+, cur: 2,1
+direction: ne
+, cur: 3,2
+direction: se
+, cur: 4,3
+direction: nw
+, cur: 5,2
+direction: se
+, cur: 4,3
+direction: w
+, cur: 5,2
+direction: ne
+, cur: 4,2
+direction: nw
+, cur: 5,3
+direction: w
+, cur: 4,4
+direction: w
+, cur: 3,4
+direction: se
+, cur: 2,4
+=====
+ store: map[-1,-1:-1,-1 -1,-3:-1,-3 -1,0:-1,0 -1,1:-1,1 -1,2:-1,2 -1,3:-1,3 -2,-1:-2,-1 -2,-2:-2,-2 -2,-3:-2,-3 -2,0:-2,0 -2,1:-2,1 -2,2:-2,2 -3,-1:-3,-1 -3,-2:-3,-2 -3,0:-3,0 -4,0:-4,0 0,-1:0,-1 0,-2:0,-2 0,-4:0,-4 0,0:0,0 0,1:0,1 0,2:0,2 0,3:0,3 0,4:0,4 0,5:0,5 0,6:0,6 1,-1:1,-1 1,-2:1,-2 1,-3:1,-3 1,0:1,0 1,1:1,1 1,2:1,2 1,3:1,3 1,4:1,4 1,5:1,5 2,-1:2,-1 2,-2:2,-2 2,0:2,0 2,1:2,1 2,3:2,3 2,4:2,4 3,-1:3,-1 3,0:3,0 3,1:3,1 3,2:3,2 3,3:3,3 3,4:3,4 4,0:4,0 4,1:4,1 4,2:4,2 4,3:4,3 4,4:4,4 5,1:5,1 5,2:5,2 5,3:5,3]
+processing txt:wenwwweseeeweswwwnwwe
+direction: w
+, cur: 0,0
+direction: e
+, cur: -1,0
+direction: nw
+, cur: 0,0
+direction: w
+, cur: -1,1
+direction: w
+, cur: -2,1
+direction: e
+, cur: -3,1
+direction: se
+, cur: -2,1
+direction: e
+, cur: -1,0
+direction: e
+, cur: 0,0
+direction: w
+, cur: 1,0
+direction: e
+, cur: 0,0
+direction: sw
+, cur: 1,0
+direction: w
+, cur: 0,-1
+direction: w
+, cur: -1,-1
+direction: nw
+, cur: -2,-1
+direction: w
+, cur: -3,0
+direction: e
+, cur: -4,0
+=====
+ store: map[-1,-1:-1,-1 -1,-3:-1,-3 -1,0:-1,0 -1,1:-1,1 -1,2:-1,2 -1,3:-1,3 -2,-1:-2,-1 -2,-2:-2,-2 -2,-3:-2,-3 -2,0:-2,0 -2,1:-2,1 -2,2:-2,2 -3,-1:-3,-1 -3,-2:-3,-2 -3,0:-3,0 -3,1:-3,1 -4,0:-4,0 0,-1:0,-1 0,-2:0,-2 0,-4:0,-4 0,0:0,0 0,1:0,1 0,2:0,2 0,3:0,3 0,4:0,4 0,5:0,5 0,6:0,6 1,-1:1,-1 1,-2:1,-2 1,-3:1,-3 1,0:1,0 1,1:1,1 1,2:1,2 1,3:1,3 1,4:1,4 1,5:1,5 2,-1:2,-1 2,-2:2,-2 2,0:2,0 2,1:2,1 2,3:2,3 2,4:2,4 3,-1:3,-1 3,0:3,0 3,1:3,1 3,2:3,2 3,3:3,3 3,4:3,4 4,0:4,0 4,1:4,1 4,2:4,2 4,3:4,3 4,4:4,4 5,1:5,1 5,2:5,2 5,3:5,3]
+processing txt:wsweesenenewnwwnwsenewsenwwsesesenwne
+direction: w
+, cur: 0,0
+direction: sw
+, cur: -1,0
+direction: e
+, cur: -2,-1
+direction: e
+, cur: -1,-1
+direction: se
+, cur: 0,-1
+direction: ne
+, cur: 1,-2
+direction: ne
+, cur: 2,-1
+direction: w
+, cur: 3,0
+direction: nw
+, cur: 2,0
+direction: w
+, cur: 1,1
+direction: nw
+, cur: 0,1
+direction: se
+, cur: -1,2
+direction: ne
+, cur: 0,1
+direction: w
+, cur: 1,2
+direction: se
+, cur: 0,2
+direction: nw
+, cur: 1,1
+direction: w
+, cur: 0,2
+direction: se
+, cur: -1,2
+direction: se
+, cur: 0,1
+direction: se
+, cur: 1,0
+direction: nw
+, cur: 2,-1
+direction: ne
+, cur: 1,0
+=====
+ store: map[-1,-1:-1,-1 -1,-3:-1,-3 -1,0:-1,0 -1,1:-1,1 -1,2:-1,2 -1,3:-1,3 -2,-1:-2,-1 -2,-2:-2,-2 -2,-3:-2,-3 -2,0:-2,0 -2,1:-2,1 -2,2:-2,2 -3,-1:-3,-1 -3,-2:-3,-2 -3,0:-3,0 -3,1:-3,1 -4,0:-4,0 0,-1:0,-1 0,-2:0,-2 0,-4:0,-4 0,0:0,0 0,1:0,1 0,2:0,2 0,3:0,3 0,4:0,4 0,5:0,5 0,6:0,6 1,-1:1,-1 1,-2:1,-2 1,-3:1,-3 1,0:1,0 1,1:1,1 1,2:1,2 1,3:1,3 1,4:1,4 1,5:1,5 2,-1:2,-1 2,-2:2,-2 2,0:2,0 2,1:2,1 2,3:2,3 2,4:2,4 3,-1:3,-1 3,0:3,0 3,1:3,1 3,2:3,2 3,3:3,3 3,4:3,4 4,0:4,0 4,1:4,1 4,2:4,2 4,3:4,3 4,4:4,4 5,1:5,1 5,2:5,2 5,3:5,3]
+processing txt:neeswseenwwswnwswswnw
+direction: ne
+, cur: 0,0
+direction: e
+, cur: 1,1
+direction: sw
+, cur: 2,1
+direction: se
+, cur: 1,0
+direction: e
+, cur: 2,-1
+direction: nw
+, cur: 3,-1
+direction: w
+, cur: 2,0
+direction: sw
+, cur: 1,0
+direction: nw
+, cur: 0,-1
+direction: sw
+, cur: -1,0
+direction: sw
+, cur: -2,-1
+direction: nw
+, cur: -3,-2
+=====
+ store: map[-1,-1:-1,-1 -1,-3:-1,-3 -1,0:-1,0 -1,1:-1,1 -1,2:-1,2 -1,3:-1,3 -2,-1:-2,-1 -2,-2:-2,-2 -2,-3:-2,-3 -2,0:-2,0 -2,1:-2,1 -2,2:-2,2 -3,-1:-3,-1 -3,-2:-3,-2 -3,0:-3,0 -3,1:-3,1 -4,-1:-4,-1 -4,0:-4,0 0,-1:0,-1 0,-2:0,-2 0,-4:0,-4 0,0:0,0 0,1:0,1 0,2:0,2 0,3:0,3 0,4:0,4 0,5:0,5 0,6:0,6 1,-1:1,-1 1,-2:1,-2 1,-3:1,-3 1,0:1,0 1,1:1,1 1,2:1,2 1,3:1,3 1,4:1,4 1,5:1,5 2,-1:2,-1 2,-2:2,-2 2,0:2,0 2,1:2,1 2,3:2,3 2,4:2,4 3,-1:3,-1 3,0:3,0 3,1:3,1 3,2:3,2 3,3:3,3 3,4:3,4 4,0:4,0 4,1:4,1 4,2:4,2 4,3:4,3 4,4:4,4 5,1:5,1 5,2:5,2 5,3:5,3]
+processing txt:nenwswwsewswnenenewsenwsenwnesesenew
+direction: ne
+, cur: 0,0
+direction: nw
+, cur: 1,1
+direction: sw
+, cur: 0,2
+direction: w
+, cur: -1,1
+direction: se
+, cur: -2,1
+direction: w
+, cur: -1,0
+direction: sw
+, cur: -2,0
+direction: ne
+, cur: -3,-1
+direction: ne
+, cur: -2,0
+direction: ne
+, cur: -1,1
+direction: w
+, cur: 0,2
+direction: se
+, cur: -1,2
+direction: nw
+, cur: 0,1
+direction: se
+, cur: -1,2
+direction: nw
+, cur: 0,1
+direction: ne
+, cur: -1,2
+direction: se
+, cur: 0,3
+direction: se
+, cur: 1,2
+direction: ne
+, cur: 2,1
+direction: w
+, cur: 3,2
+=====
+ store: map[-1,-1:-1,-1 -1,-3:-1,-3 -1,0:-1,0 -1,1:-1,1 -1,2:-1,2 -1,3:-1,3 -2,-1:-2,-1 -2,-2:-2,-2 -2,-3:-2,-3 -2,0:-2,0 -2,1:-2,1 -2,2:-2,2 -3,-1:-3,-1 -3,-2:-3,-2 -3,0:-3,0 -3,1:-3,1 -4,-1:-4,-1 -4,0:-4,0 0,-1:0,-1 0,-2:0,-2 0,-4:0,-4 0,0:0,0 0,1:0,1 0,2:0,2 0,3:0,3 0,4:0,4 0,5:0,5 0,6:0,6 1,-1:1,-1 1,-2:1,-2 1,-3:1,-3 1,0:1,0 1,1:1,1 1,2:1,2 1,3:1,3 1,4:1,4 1,5:1,5 2,-1:2,-1 2,-2:2,-2 2,0:2,0 2,1:2,1 2,2:2,2 2,3:2,3 2,4:2,4 3,-1:3,-1 3,0:3,0 3,1:3,1 3,2:3,2 3,3:3,3 3,4:3,4 4,0:4,0 4,1:4,1 4,2:4,2 4,3:4,3 4,4:4,4 5,1:5,1 5,2:5,2 5,3:5,3]
+processing txt:enewnwewneswsewnwswenweswnenwsenwsw
+direction: e
+, cur: 0,0
+direction: ne
+, cur: 1,0
+direction: w
+, cur: 2,1
+direction: nw
+, cur: 1,1
+direction: e
+, cur: 0,2
+direction: w
+, cur: 1,2
+direction: ne
+, cur: 0,2
+direction: sw
+, cur: 1,3
+direction: se
+, cur: 0,2
+direction: w
+, cur: 1,1
+direction: nw
+, cur: 0,1
+direction: sw
+, cur: -1,2
+direction: e
+, cur: -2,1
+direction: nw
+, cur: -1,1
+direction: e
+, cur: -2,2
+direction: sw
+, cur: -1,2
+direction: ne
+, cur: -2,1
+direction: nw
+, cur: -1,2
+direction: se
+, cur: -2,3
+direction: nw
+, cur: -1,2
+direction: sw
+, cur: -2,3
+=====
+ store: map[-1,-1:-1,-1 -1,-3:-1,-3 -1,0:-1,0 -1,1:-1,1 -1,2:-1,2 -1,3:-1,3 -2,-1:-2,-1 -2,-2:-2,-2 -2,-3:-2,-3 -2,0:-2,0 -2,1:-2,1 -2,2:-2,2 -2,3:-2,3 -3,-1:-3,-1 -3,-2:-3,-2 -3,0:-3,0 -3,1:-3,1 -3,2:-3,2 -4,-1:-4,-1 -4,0:-4,0 0,-1:0,-1 0,-2:0,-2 0,-4:0,-4 0,0:0,0 0,1:0,1 0,2:0,2 0,3:0,3 0,4:0,4 0,5:0,5 0,6:0,6 1,-1:1,-1 1,-2:1,-2 1,-3:1,-3 1,0:1,0 1,1:1,1 1,2:1,2 1,3:1,3 1,4:1,4 1,5:1,5 2,-1:2,-1 2,-2:2,-2 2,0:2,0 2,1:2,1 2,2:2,2 2,3:2,3 2,4:2,4 3,-1:3,-1 3,0:3,0 3,1:3,1 3,2:3,2 3,3:3,3 3,4:3,4 4,0:4,0 4,1:4,1 4,2:4,2 4,3:4,3 4,4:4,4 5,1:5,1 5,2:5,2 5,3:5,3]
+processing txt:sweneswneswneneenwnewenewwneswswnese
+direction: sw
+, cur: 0,0
+direction: e
+, cur: -1,-1
+direction: ne
+, cur: 0,-1
+direction: sw
+, cur: 1,0
+direction: ne
+, cur: 0,-1
+direction: sw
+, cur: 1,0
+direction: ne
+, cur: 0,-1
+direction: ne
+, cur: 1,0
+direction: e
+, cur: 2,1
+direction: nw
+, cur: 3,1
+direction: ne
+, cur: 2,2
+direction: w
+, cur: 3,3
+direction: e
+, cur: 2,3
+direction: ne
+, cur: 3,3
+direction: w
+, cur: 4,4
+direction: w
+, cur: 3,4
+direction: ne
+, cur: 2,4
+direction: sw
+, cur: 3,5
+direction: sw
+, cur: 2,4
+direction: ne
+, cur: 1,3
+direction: se
+, cur: 2,4
+=====
+ store: map[-1,-1:-1,-1 -1,-3:-1,-3 -1,0:-1,0 -1,1:-1,1 -1,2:-1,2 -1,3:-1,3 -2,-1:-2,-1 -2,-2:-2,-2 -2,-3:-2,-3 -2,0:-2,0 -2,1:-2,1 -2,2:-2,2 -2,3:-2,3 -3,-1:-3,-1 -3,-2:-3,-2 -3,0:-3,0 -3,1:-3,1 -3,2:-3,2 -4,-1:-4,-1 -4,0:-4,0 0,-1:0,-1 0,-2:0,-2 0,-4:0,-4 0,0:0,0 0,1:0,1 0,2:0,2 0,3:0,3 0,4:0,4 0,5:0,5 0,6:0,6 1,-1:1,-1 1,-2:1,-2 1,-3:1,-3 1,0:1,0 1,1:1,1 1,2:1,2 1,3:1,3 1,4:1,4 1,5:1,5 2,-1:2,-1 2,-2:2,-2 2,0:2,0 2,1:2,1 2,2:2,2 2,3:2,3 2,4:2,4 3,-1:3,-1 3,0:3,0 3,1:3,1 3,2:3,2 3,3:3,3 3,4:3,4 3,5:3,5 4,0:4,0 4,1:4,1 4,2:4,2 4,3:4,3 4,4:4,4 5,1:5,1 5,2:5,2 5,3:5,3]
+processing txt:swwesenesewenwneswnwwneseswwne
+direction: sw
+, cur: 0,0
+direction: w
+, cur: -1,-1
+direction: e
+, cur: -2,-1
+direction: se
+, cur: -1,-1
+direction: ne
+, cur: 0,-2
+direction: se
+, cur: 1,-1
+direction: w
+, cur: 2,-2
+direction: e
+, cur: 1,-2
+direction: nw
+, cur: 2,-2
+direction: ne
+, cur: 1,-1
+direction: sw
+, cur: 2,0
+direction: nw
+, cur: 1,-1
+direction: w
+, cur: 0,0
+direction: ne
+, cur: -1,0
+direction: se
+, cur: 0,1
+direction: sw
+, cur: 1,0
+direction: w
+, cur: 0,-1
+direction: ne
+, cur: -1,-1
+=====
+ store: map[-1,-1:-1,-1 -1,-3:-1,-3 -1,0:-1,0 -1,1:-1,1 -1,2:-1,2 -1,3:-1,3 -2,-1:-2,-1 -2,-2:-2,-2 -2,-3:-2,-3 -2,0:-2,0 -2,1:-2,1 -2,2:-2,2 -2,3:-2,3 -3,-1:-3,-1 -3,-2:-3,-2 -3,0:-3,0 -3,1:-3,1 -3,2:-3,2 -4,-1:-4,-1 -4,0:-4,0 0,-1:0,-1 0,-2:0,-2 0,-4:0,-4 0,0:0,0 0,1:0,1 0,2:0,2 0,3:0,3 0,4:0,4 0,5:0,5 0,6:0,6 1,-1:1,-1 1,-2:1,-2 1,-3:1,-3 1,0:1,0 1,1:1,1 1,2:1,2 1,3:1,3 1,4:1,4 1,5:1,5 2,-1:2,-1 2,-2:2,-2 2,0:2,0 2,1:2,1 2,2:2,2 2,3:2,3 2,4:2,4 3,-1:3,-1 3,0:3,0 3,1:3,1 3,2:3,2 3,3:3,3 3,4:3,4 3,5:3,5 4,0:4,0 4,1:4,1 4,2:4,2 4,3:4,3 4,4:4,4 5,1:5,1 5,2:5,2 5,3:5,3]
+processing txt:enesenwswwswneneswsenwnewswseenwsese
+direction: e
+, cur: 0,0
+direction: ne
+, cur: 1,0
+direction: se
+, cur: 2,1
+direction: nw
+, cur: 3,0
+direction: sw
+, cur: 2,1
+direction: w
+, cur: 1,0
+direction: sw
+, cur: 0,0
+direction: ne
+, cur: -1,-1
+direction: ne
+, cur: 0,0
+direction: sw
+, cur: 1,1
+direction: se
+, cur: 0,0
+direction: nw
+, cur: 1,-1
+direction: ne
+, cur: 0,0
+direction: w
+, cur: 1,1
+direction: sw
+, cur: 0,1
+direction: se
+, cur: -1,0
+direction: e
+, cur: 0,-1
+direction: nw
+, cur: 1,-1
+direction: se
+, cur: 0,0
+direction: se
+, cur: 1,-1
+=====
+ store: map[-1,-1:-1,-1 -1,-3:-1,-3 -1,0:-1,0 -1,1:-1,1 -1,2:-1,2 -1,3:-1,3 -2,-1:-2,-1 -2,-2:-2,-2 -2,-3:-2,-3 -2,0:-2,0 -2,1:-2,1 -2,2:-2,2 -2,3:-2,3 -3,-1:-3,-1 -3,-2:-3,-2 -3,0:-3,0 -3,1:-3,1 -3,2:-3,2 -4,-1:-4,-1 -4,0:-4,0 0,-1:0,-1 0,-2:0,-2 0,-4:0,-4 0,0:0,0 0,1:0,1 0,2:0,2 0,3:0,3 0,4:0,4 0,5:0,5 0,6:0,6 1,-1:1,-1 1,-2:1,-2 1,-3:1,-3 1,0:1,0 1,1:1,1 1,2:1,2 1,3:1,3 1,4:1,4 1,5:1,5 2,-1:2,-1 2,-2:2,-2 2,0:2,0 2,1:2,1 2,2:2,2 2,3:2,3 2,4:2,4 3,-1:3,-1 3,0:3,0 3,1:3,1 3,2:3,2 3,3:3,3 3,4:3,4 3,5:3,5 4,0:4,0 4,1:4,1 4,2:4,2 4,3:4,3 4,4:4,4 5,1:5,1 5,2:5,2 5,3:5,3]
+processing txt:wnwnesenesenenwwnenwsewesewsesesew
+direction: w
+, cur: 0,0
+direction: nw
+, cur: -1,0
+direction: ne
+, cur: -2,1
+direction: se
+, cur: -1,2
+direction: ne
+, cur: 0,1
+direction: se
+, cur: 1,2
+direction: ne
+, cur: 2,1
+direction: nw
+, cur: 3,2
+direction: w
+, cur: 2,3
+direction: ne
+, cur: 1,3
+direction: nw
+, cur: 2,4
+direction: se
+, cur: 1,5
+direction: w
+, cur: 2,4
+direction: e
+, cur: 1,4
+direction: se
+, cur: 2,4
+direction: w
+, cur: 3,3
+direction: se
+, cur: 2,3
+direction: se
+, cur: 3,2
+direction: se
+, cur: 4,1
+direction: w
+, cur: 5,0
+=====
+ store: map[-1,-1:-1,-1 -1,-3:-1,-3 -1,0:-1,0 -1,1:-1,1 -1,2:-1,2 -1,3:-1,3 -2,-1:-2,-1 -2,-2:-2,-2 -2,-3:-2,-3 -2,0:-2,0 -2,1:-2,1 -2,2:-2,2 -2,3:-2,3 -3,-1:-3,-1 -3,-2:-3,-2 -3,0:-3,0 -3,1:-3,1 -3,2:-3,2 -4,-1:-4,-1 -4,0:-4,0 0,-1:0,-1 0,-2:0,-2 0,-4:0,-4 0,0:0,0 0,1:0,1 0,2:0,2 0,3:0,3 0,4:0,4 0,5:0,5 0,6:0,6 1,-1:1,-1 1,-2:1,-2 1,-3:1,-3 1,0:1,0 1,1:1,1 1,2:1,2 1,3:1,3 1,4:1,4 1,5:1,5 2,-1:2,-1 2,-2:2,-2 2,0:2,0 2,1:2,1 2,2:2,2 2,3:2,3 2,4:2,4 3,-1:3,-1 3,0:3,0 3,1:3,1 3,2:3,2 3,3:3,3 3,4:3,4 3,5:3,5 4,0:4,0 4,1:4,1 4,2:4,2 4,3:4,3 4,4:4,4 5,0:5,0 5,1:5,1 5,2:5,2 5,3:5,3]
+processing txt:nenewswnwewswnenesenwnesewesw
+direction: ne
+, cur: 0,0
+direction: ne
+, cur: 1,1
+direction: w
+, cur: 2,2
+direction: sw
+, cur: 1,2
+direction: nw
+, cur: 0,1
+direction: e
+, cur: -1,2
+direction: w
+, cur: 0,2
+direction: sw
+, cur: -1,2
+direction: ne
+, cur: -2,1
+direction: ne
+, cur: -1,2
+direction: se
+, cur: 0,3
+direction: nw
+, cur: 1,2
+direction: ne
+, cur: 0,3
+direction: se
+, cur: 1,4
+direction: w
+, cur: 2,3
+direction: e
+, cur: 1,3
+direction: sw
+, cur: 2,3
+=====
+ store: map[-1,-1:-1,-1 -1,-3:-1,-3 -1,0:-1,0 -1,1:-1,1 -1,2:-1,2 -1,3:-1,3 -2,-1:-2,-1 -2,-2:-2,-2 -2,-3:-2,-3 -2,0:-2,0 -2,1:-2,1 -2,2:-2,2 -2,3:-2,3 -3,-1:-3,-1 -3,-2:-3,-2 -3,0:-3,0 -3,1:-3,1 -3,2:-3,2 -4,-1:-4,-1 -4,0:-4,0 0,-1:0,-1 0,-2:0,-2 0,-4:0,-4 0,0:0,0 0,1:0,1 0,2:0,2 0,3:0,3 0,4:0,4 0,5:0,5 0,6:0,6 1,-1:1,-1 1,-2:1,-2 1,-3:1,-3 1,0:1,0 1,1:1,1 1,2:1,2 1,3:1,3 1,4:1,4 1,5:1,5 2,-1:2,-1 2,-2:2,-2 2,0:2,0 2,1:2,1 2,2:2,2 2,3:2,3 2,4:2,4 3,-1:3,-1 3,0:3,0 3,1:3,1 3,2:3,2 3,3:3,3 3,4:3,4 3,5:3,5 4,0:4,0 4,1:4,1 4,2:4,2 4,3:4,3 4,4:4,4 5,0:5,0 5,1:5,1 5,2:5,2 5,3:5,3]
+processing txt:eneswnwswnwsenenwnwnwwseeswneewsenese
+direction: e
+, cur: 0,0
+direction: ne
+, cur: 1,0
+direction: sw
+, cur: 2,1
+direction: nw
+, cur: 1,0
+direction: sw
+, cur: 0,1
+direction: nw
+, cur: -1,0
+direction: se
+, cur: -2,1
+direction: ne
+, cur: -1,0
+direction: nw
+, cur: 0,1
+direction: nw
+, cur: -1,2
+direction: nw
+, cur: -2,3
+direction: w
+, cur: -3,4
+direction: se
+, cur: -4,4
+direction: e
+, cur: -3,3
+direction: sw
+, cur: -2,3
+direction: ne
+, cur: -3,2
+direction: e
+, cur: -2,3
+direction: w
+, cur: -1,3
+direction: se
+, cur: -2,3
+direction: ne
+, cur: -1,2
+direction: se
+, cur: 0,3
+=====
+ store: map[-1,-1:-1,-1 -1,-3:-1,-3 -1,0:-1,0 -1,1:-1,1 -1,2:-1,2 -1,3:-1,3 -2,-1:-2,-1 -2,-2:-2,-2 -2,-3:-2,-3 -2,0:-2,0 -2,1:-2,1 -2,2:-2,2 -2,3:-2,3 -3,-1:-3,-1 -3,-2:-3,-2 -3,0:-3,0 -3,1:-3,1 -3,2:-3,2 -3,3:-3,3 -3,4:-3,4 -4,-1:-4,-1 -4,0:-4,0 -4,4:-4,4 0,-1:0,-1 0,-2:0,-2 0,-4:0,-4 0,0:0,0 0,1:0,1 0,2:0,2 0,3:0,3 0,4:0,4 0,5:0,5 0,6:0,6 1,-1:1,-1 1,-2:1,-2 1,-3:1,-3 1,0:1,0 1,1:1,1 1,2:1,2 1,3:1,3 1,4:1,4 1,5:1,5 2,-1:2,-1 2,-2:2,-2 2,0:2,0 2,1:2,1 2,2:2,2 2,3:2,3 2,4:2,4 3,-1:3,-1 3,0:3,0 3,1:3,1 3,2:3,2 3,3:3,3 3,4:3,4 3,5:3,5 4,0:4,0 4,1:4,1 4,2:4,2 4,3:4,3 4,4:4,4 5,0:5,0 5,1:5,1 5,2:5,2 5,3:5,3]
+processing txt:neswnwewnwnwseenwseesewsenwsweewe
+direction: ne
+, cur: 0,0
+direction: sw
+, cur: 1,1
+direction: nw
+, cur: 0,0
+direction: e
+, cur: -1,1
+direction: w
+, cur: 0,1
+direction: nw
+, cur: -1,1
+direction: nw
+, cur: -2,2
+direction: se
+, cur: -3,3
+direction: e
+, cur: -2,2
+direction: nw
+, cur: -1,2
+direction: se
+, cur: -2,3
+direction: e
+, cur: -1,2
+direction: se
+, cur: 0,2
+direction: w
+, cur: 1,1
+direction: se
+, cur: 0,1
+direction: nw
+, cur: 1,0
+direction: sw
+, cur: 0,1
+direction: e
+, cur: -1,0
+direction: e
+, cur: 0,0
+direction: w
+, cur: 1,0
+direction: e
+, cur: 0,0
+=====
+ store: map[-1,-1:-1,-1 -1,-3:-1,-3 -1,0:-1,0 -1,1:-1,1 -1,2:-1,2 -1,3:-1,3 -2,-1:-2,-1 -2,-2:-2,-2 -2,-3:-2,-3 -2,0:-2,0 -2,1:-2,1 -2,2:-2,2 -2,3:-2,3 -3,-1:-3,-1 -3,-2:-3,-2 -3,0:-3,0 -3,1:-3,1 -3,2:-3,2 -3,3:-3,3 -3,4:-3,4 -4,-1:-4,-1 -4,0:-4,0 -4,4:-4,4 0,-1:0,-1 0,-2:0,-2 0,-4:0,-4 0,0:0,0 0,1:0,1 0,2:0,2 0,3:0,3 0,4:0,4 0,5:0,5 0,6:0,6 1,-1:1,-1 1,-2:1,-2 1,-3:1,-3 1,0:1,0 1,1:1,1 1,2:1,2 1,3:1,3 1,4:1,4 1,5:1,5 2,-1:2,-1 2,-2:2,-2 2,0:2,0 2,1:2,1 2,2:2,2 2,3:2,3 2,4:2,4 3,-1:3,-1 3,0:3,0 3,1:3,1 3,2:3,2 3,3:3,3 3,4:3,4 3,5:3,5 4,0:4,0 4,1:4,1 4,2:4,2 4,3:4,3 4,4:4,4 5,0:5,0 5,1:5,1 5,2:5,2 5,3:5,3]
+processing txt:wseweeenwnesenwwwswnew
+direction: w
+, cur: 0,0
+direction: se
+, cur: -1,0
+direction: w
+, cur: 0,-1
+direction: e
+, cur: -1,-1
+direction: e
+, cur: 0,-1
+direction: e
+, cur: 1,-1
+direction: nw
+, cur: 2,-1
+direction: ne
+, cur: 1,0
+direction: se
+, cur: 2,1
+direction: nw
+, cur: 3,0
+direction: w
+, cur: 2,1
+direction: w
+, cur: 1,1
+direction: sw
+, cur: 0,1
+direction: ne
+, cur: -1,0
+direction: w
+, cur: 0,1
+=====
+ store: map[-1,-1:-1,-1 -1,-3:-1,-3 -1,0:-1,0 -1,1:-1,1 -1,2:-1,2 -1,3:-1,3 -2,-1:-2,-1 -2,-2:-2,-2 -2,-3:-2,-3 -2,0:-2,0 -2,1:-2,1 -2,2:-2,2 -2,3:-2,3 -3,-1:-3,-1 -3,-2:-3,-2 -3,0:-3,0 -3,1:-3,1 -3,2:-3,2 -3,3:-3,3 -3,4:-3,4 -4,-1:-4,-1 -4,0:-4,0 -4,4:-4,4 0,-1:0,-1 0,-2:0,-2 0,-4:0,-4 0,0:0,0 0,1:0,1 0,2:0,2 0,3:0,3 0,4:0,4 0,5:0,5 0,6:0,6 1,-1:1,-1 1,-2:1,-2 1,-3:1,-3 1,0:1,0 1,1:1,1 1,2:1,2 1,3:1,3 1,4:1,4 1,5:1,5 2,-1:2,-1 2,-2:2,-2 2,0:2,0 2,1:2,1 2,2:2,2 2,3:2,3 2,4:2,4 3,-1:3,-1 3,0:3,0 3,1:3,1 3,2:3,2 3,3:3,3 3,4:3,4 3,5:3,5 4,0:4,0 4,1:4,1 4,2:4,2 4,3:4,3 4,4:4,4 5,0:5,0 5,1:5,1 5,2:5,2 5,3:5,3]
+35
