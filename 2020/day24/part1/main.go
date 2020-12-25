@@ -7,8 +7,8 @@ import (
 )
 
 type pos struct {
-	x, y, count int
-	flip        bool
+	x, y int
+	flip bool
 }
 
 func (p pos) String() string {
@@ -34,8 +34,8 @@ func main() {
 		n := len(txt)
 		var i int
 		cur := *(store["0,0"])
+		var dir string
 		for i < n {
-			var dir string
 			if txt[i] != 'e' && txt[i] != 'w' {
 				dir = txt[i : i+2]
 				i += 2
@@ -43,21 +43,18 @@ func main() {
 				dir = txt[i : i+1]
 				i++
 			}
-			fmt.Printf("direction: %s\n, cur: %#v\n", dir, cur)
-			np := pos{x: cur.x + dirs[dir].x, y: cur.y + dirs[dir].y, count: 1}
 			// if np.x == 0 && np.y == 0 {
 			// 	panic("go back to where we start")
-			// }
+			np := pos{x: cur.x + dirs[dir].x, y: cur.y + dirs[dir].y}
 			if op, exists := store[np.String()]; exists {
-				op.x = np.x
-				op.y = np.y
-				op.flip = !op.flip
-				op.count++
 				cur = *op
 			} else {
-				np.flip = !np.flip
 				store[np.String()] = &np
 				cur = np
+			}
+			if i >= n {
+				// flip np
+				store[cur.String()].flip = !store[cur.String()].flip
 			}
 		}
 		// fmt.Printf("=====\n store: %v\n", store)
@@ -67,9 +64,8 @@ func main() {
 	}
 	var ans int
 	for _, v := range store {
-		if v.count&1 != 0 {
+		if v.flip {
 			ans++
-			fmt.Printf("tile %s is black\n", v)
 		}
 	}
 	fmt.Println(ans)
