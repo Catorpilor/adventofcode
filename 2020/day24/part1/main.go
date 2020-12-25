@@ -7,8 +7,8 @@ import (
 )
 
 type pos struct {
-	x, y, count int
-	flip        bool
+	x, y int
+	flip bool
 }
 
 func (p pos) String() string {
@@ -21,10 +21,10 @@ func main() {
 	st := pos{x: 0, y: 0, flip: false}
 	store[st.String()] = &st
 	dirs := map[string]pos{
-		"e":  pos{x: 1, y: 0},
+		"e":  pos{x: 2, y: 0},
 		"se": pos{x: 1, y: -1},
 		"sw": pos{x: -1, y: -1},
-		"w":  pos{x: -1, y: 0},
+		"w":  pos{x: -2, y: 0},
 		"nw": pos{x: -1, y: 1},
 		"ne": pos{x: 1, y: 1},
 	}
@@ -33,9 +33,9 @@ func main() {
 		fmt.Printf("processing txt:%s\n", txt)
 		n := len(txt)
 		var i int
-		cur := st
+		cur := *(store["0,0"])
+		var dir string
 		for i < n {
-			var dir string
 			if txt[i] != 'e' && txt[i] != 'w' {
 				dir = txt[i : i+2]
 				i += 2
@@ -43,19 +43,22 @@ func main() {
 				dir = txt[i : i+1]
 				i++
 			}
-			fmt.Printf("direction: %s\n, cur: %#v\n", dir, cur)
-			np := pos{x: cur.x + dirs[dir].x, y: cur.y + dirs[dir].y, count: 1}
+			np := pos{x: cur.x + dirs[dir].x, y: cur.y + dirs[dir].y}
+			fmt.Printf("direction: %s\n, prev: %#v\n", dir, cur)
+			// if i >= n {
+			// 	// flip this
+			// }
 			if op, exists := store[np.String()]; exists {
-				op.x = np.x
-				op.y = np.y
-				op.flip = !op.flip
-				op.count++
 				cur = *op
 			} else {
-				np.flip = !np.flip
 				store[np.String()] = &np
 				cur = np
 			}
+			if i >= n {
+				// flip np
+				store[cur.String()].flip = !store[cur.String()].flip
+			}
+			fmt.Printf("cur: %#v\n", cur)
 		}
 		// fmt.Printf("=====\n store: %v\n", store)
 	}
