@@ -4,11 +4,12 @@ import (
 	"bufio"
 	"fmt"
 	"os"
+	"strconv"
+	"strings"
 )
 
 type pos struct {
 	x, y int
-	flip bool
 }
 
 func (p pos) String() string {
@@ -28,13 +29,15 @@ var (
 
 func main() {
 	scanner := bufio.NewScanner(os.Stdin)
-
-	var cmds [][]string
+	store := make(map[string]bool)
+	// store["0,0"] = &pos{x: 0, y: 0}
+	st := pos{x: 0, y: 0}
 	for scanner.Scan() {
 		txt := scanner.Text()
+		fmt.Printf("processing txt:%s\n", txt)
 		n := len(txt)
 		var i int
-		var tmp []string
+		cur := st
 		var dir string
 		for i < n {
 			if txt[i] != 'e' && txt[i] != 'w' {
@@ -44,78 +47,81 @@ func main() {
 				dir = txt[i : i+1]
 				i++
 			}
-			tmp = append(tmp, dir)
+			// if np.x == 0 && np.y == 0 {
+			// 	panic("go back to where we start")
+			cur.x += dirs[dir].x
+			cur.y += dirs[dir].y
+			if i >= n {
+				// flip np
+				store[cur.String()] = !store[cur.String()]
+			}
 		}
-		cmds = append(cmds, tmp)
 		// fmt.Printf("=====\n store: %v\n", store)
 	}
 	if err := scanner.Err(); err != nil {
 		fmt.Fprintln(os.Stderr, "reading standard input:", err)
 	}
-	_ = process(cmds, 100)
+
+	_ = process(store, 100)
 }
 
-func process(cmds [][]string, n int) int {
-	store := make(map[string]*pos)
+func toPos(s string) pos {
+	segs := strings.FieldsFunc(s, func(c rune) bool {
+		return c == ','
+	})
+	var ret pos
+	ret.x, _ = strconv.Atoi(segs[0])
+	ret.y, _ = strconv.Atoi(segs[1])
+	return ret
 
-	st := pos{x: 0, y: 0, flip: false}
-	store[st.String()] = &st
+}
+
+func dailyFlip(blackTiles map[string]bool) map[string]bool {
+	blackNeighbours := make(map[string]int)
+
 	deltas := make([]pos, 0, len(dirs))
 	for _, v := range dirs {
 		deltas = append(deltas, v)
 	}
+	for p, b := range blackTiles {
+		if !b {
+			continue
+		}
+		cur := toPos(p)
+		for _, d := range deltas {
+			vp := pos{cur.x + d.x, cur.y + d.y}
+			blackNeighbours[vp.String()]++
+		}
+	}
+
+	newBlackTiles := make(map[string]bool)
+
+	for p, count := range blackNeighbours {
+		previousColour := blackTiles[p]
+
+		if previousColour {
+			if !(count == 0 || count > 2) {
+				newBlackTiles[p] = true
+			}
+		} else if count == 2 {
+			newBlackTiles[p] = true
+		}
+	}
+
+	return newBlackTiles
+}
+
+func process(store map[string]bool, n int) int {
+	var ans int
 	for i := 0; i < n; i++ {
-		cur := *(store["0,0"])
-		var needsFlip []string
-		nbrs := make(map[string]int)
-		for _, dd := range cmds {
-			n := len(dd)
-			for i, d := range dd {
-				np := pos{x: cur.x + dirs[d].x, y: cur.y + dirs[d].y}
-				// if i >= n {
-				// 	// flip this
-				// }
-				if op, exists := store[np.String()]; exists {
-					cur = *op
-				} else {
-					store[np.String()] = &np
-					cur = np
-				}
-				if i == n-1 {
-					// flip np
-					needsFlip = append(needsFlip, cur.String())
-					// store[cur.String()].flip = !store[cur.String()].flip
-					// get neighbor's colors
-					for _, delta := range deltas {
-						np := pos{x: cur.x + delta.x, y: cur.y + delta.y}
-						if old, exists := store[np.String()]; exists {
-							if old.flip {
-								nbrs[cur.String()]++
-							}
-						}
-					}
-				}
-			}
-		}
-		fmt.Printf("day(%d) needFlip: %v, nbrs: %v\n", i+1, needsFlip, nbrs)
-		for _, p := range needsFlip {
-			if store[p].flip {
-				if nbrs[p] == 0 || nbrs[p] > 2 {
-					store[p].flip = false
-				}
-			} else {
-				if nbrs[p] == 2 {
-					store[p].flip = true
-				}
-			}
-		}
-		var ans int
+		ans = 0
+		store = dailyFlip(store)
 		for _, v := range store {
-			if v.flip {
+			if v {
 				ans++
 			}
 		}
-		fmt.Printf("day(%d): black tiles: %d\n", i+1, ans)
+		fmt.Printf("day(%d): number of black: %d\n", i+1, ans)
 	}
-	return 0
+	return ans
 }
