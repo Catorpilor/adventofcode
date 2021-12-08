@@ -42,6 +42,7 @@ func main() {
 	fmt.Println(o2Rate * co2Rate)
 }
 
+// compute time complexity O(MN), space complexity O(M)
 func compute(nums []string, startByte byte, idx, rateType int) int64 {
 	// fmt.Printf("nums: %v, startByte: %v, idx: %d, rateType: %d\n", nums, startByte, idx, rateType)
 	if len(nums) == 1 {
