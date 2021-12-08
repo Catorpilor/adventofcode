@@ -18,25 +18,18 @@ func main() {
 	if err := scanner.Err(); err != nil {
 		fmt.Fprintln(os.Stderr, "reading standard input:", err)
 	}
-	cals := make([]int, 0, len(nums))
-	preSum := -1
-	for i:=0; i+2<len(nums); i++ {
-		if preSum == -1 {
-			preSum = nums[i]+nums[i+1]+nums[i+2]
-		}else {
-			preSum = preSum - nums[i-1]+nums[i+2]
-		}
-		cals = append(cals, preSum)
-	}
-	prev := -1
+	 prev := -1
 	var res int
-	for i := range cals {
-		if prev != -1 {
-			if cals[i] > prev {
+	for i:=0; i+2<len(nums); i++ {
+		if prev == -1 {
+			prev = nums[i]+nums[i+1]+nums[i+2]
+		}else {
+			cur := prev - nums[i-1]+nums[i+2]
+			if cur > prev {
 				res++
 			}
+			prev = cur
 		}
-		prev = cals[i]
 	}
 	fmt.Println(res)
 }
