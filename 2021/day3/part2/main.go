@@ -32,7 +32,7 @@ func main() {
 	// fmt.Println(nums)
 
 	var o2Rate, co2Rate int64
-	if pSum[0] >= total>>1 {
+	if pSum[0] >= (total+1)>>1 {
 		o2Rate = compute(nums, '1', 0, 1)
 		co2Rate = compute(nums, '0', 0, 0)
 	} else {
