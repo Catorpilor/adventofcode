@@ -17,8 +17,7 @@ func main() {
 				max2, max3 = max1, max2
 				max1 = cur
 			} else if cur > max2 {
-				max3 = max2
-				max2 = cur
+				max2, max3 = cur, max2
 			} else if cur > max3 {
 				max3 = cur
 			}
