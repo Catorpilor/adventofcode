@@ -22,13 +22,12 @@ var (
 	re = regexp.MustCompile(pattern)
 )
 
-type node struct{
-	val byte
+type node struct {
+	val       byte
 	pre, next *node
 }
 
-
-type fifo struct{
+type fifo struct {
 	pos *node
 }
 
@@ -37,7 +36,7 @@ func (f *fifo) MoveNTo(to *fifo, n int) {
 		return
 	}
 	// fmt.Printf("before move: from: %s, to: %s, amount: %d\n", f.String(), to.String(), n)
-	for i:=0; i<n; i++ {
+	for i := 0; i < n; i++ {
 		f.pos = f.pos.pre
 	}
 	head := f.pos.next
@@ -66,7 +65,6 @@ func (f *fifo) String() string {
 	}
 	return sb.String()
 }
-
 
 func main() {
 	scanner := bufio.NewScanner(os.Stdin)
@@ -99,7 +97,7 @@ func main() {
 	}
 	sbs := strings.Split(sb.String(), "\n")
 	n := len(sbs)
-	for i, j := 0, n-1; i<j; i,j = i+1, j-1 {
+	for i, j := 0, n-1; i < j; i, j = i+1, j-1 {
 		sbs[i], sbs[j] = sbs[j], sbs[i]
 	}
 	// get number of racks
@@ -114,11 +112,11 @@ func main() {
 	for i := range racks {
 		racks[i] = &fifo{pos: &node{}}
 	}
-	for i:=2; i<n; i++ {
+	for i := 2; i < n; i++ {
 		n2 := len(sbs[i])
 		var idx int
-		for j :=0; j<n2; j+=4 {
-			if sbs[i][j]  == '[' {
+		for j := 0; j < n2; j += 4 {
+			if sbs[i][j] == '[' {
 				racks[idx].Push(&node{val: sbs[i][j+1]})
 			}
 			idx++
@@ -145,4 +143,3 @@ func main() {
 	}
 	fmt.Println(string(res))
 }
-
