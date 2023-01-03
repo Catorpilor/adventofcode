@@ -5,14 +5,13 @@ import (
 	"fmt"
 	"log"
 	"os"
-	"strings"
 )
 
 func main() {
 	scanner := bufio.NewScanner(os.Stdin)
 	var res int
 	for scanner.Scan() {
-		segs := strings.Split(scanner.Text(), " | ")
+		// segs := strings.Split(scanner.Text(), " | ")
 
 	}
 	if err := scanner.Err(); err != nil {
